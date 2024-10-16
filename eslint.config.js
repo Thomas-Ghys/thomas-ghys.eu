@@ -16,10 +16,42 @@ module.exports = [
           enforceBuildableLibDependency: true,
           allow: ['^.*/eslint(\\.base)?\\.config\\.[cm]?js$'],
           depConstraints: [
-            {
-              sourceTag: '*',
-              onlyDependOnLibsWithTags: ['*'],
-            },
+              {
+                  sourceTag: "type:feature",
+                  onlyDependOnLibsWithTags: [
+                      "type:feature",
+                      "type:ui",
+                      "type:utils",
+                      "type:data"
+                  ]
+              },
+              {
+                sourceTag: "type:ui",
+                onlyDependOnLibsWithTags: [
+                    "type:ui",
+                    "type:utils",
+                    "type:data"
+                ]
+              },
+              {
+                sourceTag: "type:utils",
+                onlyDependOnLibsWithTags: [
+                    "type:utils",
+                    "type:data"
+                ]
+              },
+              {
+                sourceTag: "type:data",
+                onlyDependOnLibsWithTags: [
+                    "type:data"
+                ]
+              },
+              {
+                sourceTag: "domain:theming",
+                onlyDependOnLibsWithTags: [
+                    "domain:theming"
+                ]
+              }
           ],
         },
       ],

@@ -1,0 +1,20 @@
+{
+	"name": "theming-data",
+	"$schema": "../../../node_modules/nx/schemas/project-schema.json",
+	"sourceRoot": "libs/theming/theming-data/src",
+	"prefix": "lib",
+	"projectType": "library",
+	"tags": ["type:data", "domain:theming"],
+	"targets": {
+		"test": {
+			"executor": "@nx/jest:jest",
+			"outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+			"options": {
+				"jestConfig": "libs/theming/theming-data/jest.config.ts"
+			}
+		},
+		"lint": {
+			"executor": "@nx/eslint:lint"
+		}
+	}
+}

@@ -1,0 +1,169 @@
+// Create the theme tokens for each theme type
+@mixin theme-tokens($theme) {
+	// Get the sub maps from the theme file
+	$colors: map-get(
+		$map: $theme,
+		$key: colors,
+	);
+
+	$colors-keys: map-keys(
+		$map: $colors,
+	);
+
+	$neutrals: map-get(
+		$map: $theme,
+		$key: neutrals,
+	);
+
+	$neutrals-keys: map-keys(
+		$map: $neutrals,
+	);
+
+	// Loop through the colors keys
+	@each $key in $colors-keys {
+		// Add the theme color tokens with the data-theme limitations for light theme
+		:root[data-theme='light'] {
+			--theme-color-#{$key}: var(--theme-color-#{$key}-light);
+			--theme-color-on-#{$key}: var(--theme-color-on-#{$key}-light);
+			--theme-color-#{$key}-container: var(
+				--theme-color-#{$key}-container-light
+			);
+			--theme-color-on-#{$key}-container: var(
+				--theme-color-on-#{$key}-container-light
+			);
+			--theme-color-inverse#{$key}: var(
+				--theme-color-inverse#{$key}-light
+			);
+			--theme-color-#{$key}-fixed: var(--theme-color-#{$key}-fixed-light);
+			--theme-color-on-#{$key}-fixed: var(
+				--theme-color-on-#{$key}-fixed-light
+			);
+			--theme-color-on-#{$key}-fixed-variant: var(
+				--theme-color-on-#{$key}-fixed-variant-light
+			);
+			--theme-color-#{$key}-fixed-dim: var(
+				--theme-color-#{$key}-fixed-dim-light
+			);
+		}
+
+		// Add the theme color tokens with the data-theme limitations for light theme
+		:root[data-theme='dark'] {
+			--theme-color-#{$key}: var(--theme-color-#{$key}-dark);
+			--theme-color-on-#{$key}: var(--theme-color-on-#{$key}-dark);
+			--theme-color-#{$key}-container: var(
+				--theme-color-#{$key}-container-dark
+			);
+			--theme-color-on-#{$key}-container: var(
+				--theme-color-on-#{$key}-container-dark
+			);
+			--theme-color-inverse#{$key}: var(
+				--theme-color-inverse#{$key}-dark
+			);
+			--theme-color-#{$key}-fixed: var(--theme-color-#{$key}-fixed-dark);
+			--theme-color-on-#{$key}-fixed: var(
+				--theme-color-on-#{$key}-fixed-dark
+			);
+			--theme-color-on-#{$key}-fixed-variant: var(
+				--theme-color-on-#{$key}-fixed-variant-dark
+			);
+			--theme-color-#{$key}-fixed-dim: var(
+				--theme-color-#{$key}-fixed-dim-dark
+			);
+		}
+	}
+
+	// Loop through the neutrals keys
+	@each $key in $neutrals-keys {
+		// Add the theme color tokens with the data-theme limitations for light theme
+		:root[data-theme='light'] {
+			--theme-color-#{$key}-surface: var(
+				--theme-color-#{$key}-surface-light
+			);
+			--theme-color-on-#{$key}-surface: var(
+				--theme-color-on-#{$key}-surface-light
+			);
+			--theme-color-#{$key}-surface-dim: var(
+				--theme-color-#{$key}-surface-dim-light
+			);
+			--theme-color-#{$key}-surface-bright: var(
+				--theme-color-#{$key}-surface-bright-light
+			);
+
+			--theme-color-#{$key}-surface-container-lowest: var(
+				--theme-color-#{$key}-surface-container-lowest-light
+			);
+			--theme-color-#{$key}-surface-container-low: var(
+				--theme-color-#{$key}-surface-container-low-light
+			);
+			--theme-color-#{$key}-surface-container: var(
+				--theme-color-#{$key}-surface-container-light
+			);
+			--theme-color-#{$key}-surface-container-high: var(
+				---theme-color-#{$key}-surface-container-high-light
+			);
+			--theme-color-#{$key}-surface-container-highest: var(
+				--theme-color-#{$key}-surface-container-highest-light
+			);
+
+			--theme-color-inverse-#{$key}-surface: var(
+				--theme-color-inverse-#{$key}-surface-light
+			);
+			--theme-color-inverse--on#{$key}-surface: var(
+				--theme-color-inverse--on#{$key}-surface-light
+			);
+
+			--theme-color-#{$key}-background: var(
+				--theme-color-#{$key}-background-light
+			);
+			--theme-color-on-#{$key}-background: var(
+				--theme-color-on-#{$key}-background-light
+			);
+		}
+
+		// Add the theme color tokens with the data-theme limitations for dark theme
+		:root[data-theme='dark'] {
+			--theme-color-#{$key}-surface: var(
+				--theme-color-#{$key}-surface-dark
+			);
+			--theme-color-on-#{$key}-surface: var(
+				--theme-color-on-#{$key}-surface-dark
+			);
+			--theme-color-#{$key}-surface-dim: var(
+				--theme-color-#{$key}-surface-dim-dark
+			);
+			--theme-color-#{$key}-surface-bright: var(
+				--theme-color-#{$key}-surface-bright-dark
+			);
+
+			--theme-color-#{$key}-surface-container-lowest: var(
+				--theme-color-#{$key}-surface-container-lowest-dark
+			);
+			--theme-color-#{$key}-surface-container-low: var(
+				--theme-color-#{$key}-surface-container-low-dark
+			);
+			--theme-color-#{$key}-surface-container: var(
+				--theme-color-#{$key}-surface-container-dark
+			);
+			--theme-color-#{$key}-surface-container-high: var(
+				---theme-color-#{$key}-surface-container-high-dark
+			);
+			--theme-color-#{$key}-surface-container-highest: var(
+				--theme-color-#{$key}-surface-container-highest-dark
+			);
+
+			--theme-color-inverse-#{$key}-surface: var(
+				--theme-color-inverse-#{$key}-surface-dark
+			);
+			--theme-color-inverse--on#{$key}-surface: var(
+				--theme-color-inverse--on#{$key}-surface-dark
+			);
+
+			--theme-color-#{$key}-background: var(
+				--theme-color-#{$key}-background-dark
+			);
+			--theme-color-on-#{$key}-background: var(
+				--theme-color-on-#{$key}-background-dark
+			);
+		}
+	}
+}

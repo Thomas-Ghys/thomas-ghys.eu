@@ -1,0 +1,27 @@
+{
+	"name": "theming-utils",
+	"$schema": "../../../node_modules/nx/schemas/project-schema.json",
+	"sourceRoot": "libs/theming/theming-utils/src",
+	"prefix": "theming",
+	"projectType": "library",
+	"tags": ["type:utils", "domain:theming"],
+	"assets": [
+		{
+			"input": "src/lib/theme-builder/theme-builder.scss",
+			"glob": "**/*.scss",
+			"output": "styles"
+		}
+	],
+	"targets": {
+		"test": {
+			"executor": "@nx/jest:jest",
+			"outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+			"options": {
+				"jestConfig": "libs/theming/theming-utils/jest.config.ts"
+			}
+		},
+		"lint": {
+			"executor": "@nx/eslint:lint"
+		}
+	}
+}

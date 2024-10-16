@@ -1,0 +1,52 @@
+// Create the root tokens that link to the theme file
+@mixin theme-color-ref-tokens($theme) {
+	// Get the sub maps from the theme file
+	$colors: map-get(
+		$map: $theme,
+		$key: colors,
+	);
+
+	$neutrals: map-get(
+		$map: $theme,
+		$key: neutrals,
+	);
+
+	// Add the tokens to the root of the web page
+	:root {
+		// Create root tokens from the colors map
+		$colors-keys: map-keys(
+			$map: $colors,
+		);
+		// Loop through each color in the colors map
+		@each $color-key in $colors-keys {
+			// For each color get the keys of the sub map
+			$map: map-get(
+				$map: $colors,
+				$key: $color-key,
+			);
+
+			// Loop through each key in the color sub map
+			@each $map-key, $color in $map {
+				--theme-color-ref-#{$color-key}#{$map-key}: #{$color};
+			}
+		}
+
+		// Create root tokens from the neutrals map
+		$neutrals-keys: map-keys(
+			$map: $neutrals,
+		);
+		// Loop through each nautral in the nautrals map
+		@each $neutral-key in $neutrals-keys {
+			// For each neutral get the keys of the sub map
+			$map: map-get(
+				$map: $neutrals,
+				$key: $neutral-key,
+			);
+
+			// Loop through each key in the neutral sub map
+			@each $map-key, $color in $map {
+				--theme-color-ref-#{$neutral-key}#{$map-key}: #{$color};
+			}
+		}
+	}
+}
