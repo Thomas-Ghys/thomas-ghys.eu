@@ -1,0 +1,13 @@
+.theme-switcher-container {
+	align-items: center;
+	color: var(--theme-color-on-surface-variant);
+	display: flex;
+	height: 4rem;
+	justify-content: center;
+	overflow: hidden;
+	width: 4rem;
+
+	&:hover {
+		cursor: pointer;
+	}
+}

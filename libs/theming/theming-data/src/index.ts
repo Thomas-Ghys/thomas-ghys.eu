@@ -1,1 +1,1 @@
-export * from './lib/theming-data/theming-data.component';
+export * from './lib/theme';

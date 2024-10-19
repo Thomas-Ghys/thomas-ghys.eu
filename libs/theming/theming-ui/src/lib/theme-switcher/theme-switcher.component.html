@@ -1,0 +1,11 @@
+<div class="theme-switcher-container">
+	@switch (theme) { @case ('dark') {
+	<div class="theme-light-mode-switcher" (click)="setTheme('light')">
+		<span class="material-symbols-outlined">light_mode</span>
+	</div>
+	} @default {
+	<div class="theme-dark-mode-switcher" (click)="setTheme('dark')">
+		<span class="material-symbols-outlined">dark_mode</span>
+	</div>
+	} }
+</div>
