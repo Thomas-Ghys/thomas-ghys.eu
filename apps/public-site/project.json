@@ -5,6 +5,18 @@
 	"prefix": "app",
 	"sourceRoot": "apps/public-site/src",
 	"tags": ["type:shell", "domain:public-site"],
+	"i18n": {
+		"locales": {
+			"en": {
+				"baseHref": "en",
+				"translation": "apps/public-site/public/locales/messages.en.xlf"
+			},
+			"nl": {
+				"baseHref": "nl",
+				"translation": "apps/public-site/public/locales/messages.nl.xlf"
+			}
+		}
+	},
 	"targets": {
 		"build": {
 			"executor": "@angular-devkit/build-angular:application",
@@ -13,17 +25,24 @@
 				"outputPath": "dist/apps/public-site",
 				"index": "apps/public-site/src/index.html",
 				"browser": "apps/public-site/src/main.ts",
-				"polyfills": ["zone.js"],
+				"polyfills": ["zone.js", "@angular/localize/init"],
 				"tsConfig": "apps/public-site/tsconfig.app.json",
 				"inlineStyleLanguage": "scss",
+				"i18nMissingTranslation": "error",
 				"assets": [
 					{
 						"glob": "**/*",
 						"input": "apps/public-site/public"
+					},
+					{
+						"glob": "**/locales/*",
+						"input": "apps/public-site/public/locales"
 					}
 				],
 				"styles": [
-					{ "input": "apps/public-site/src/styles.scss" },
+					{
+						"input": "apps/public-site/src/styles.scss"
+					},
 					{
 						"inject": true,
 						"input": "libs/theming/theming-utils/src/lib/theme-builder/theme-builder.scss"
@@ -32,7 +51,14 @@
 				"scripts": []
 			},
 			"configurations": {
+				"en": {
+					"localize": ["en"]
+				},
+				"nl": {
+					"localize": ["nl"]
+				},
 				"production": {
+					"localize": true,
 					"budgets": [
 						{
 							"type": "initial",
@@ -63,6 +89,12 @@
 				},
 				"development": {
 					"buildTarget": "public-site:build:development"
+				},
+				"en": {
+					"buildTarget": "public-site:build:en"
+				},
+				"nl": {
+					"buildTarget": "public-site:build:nl"
 				}
 			},
 			"defaultConfiguration": "development"
@@ -70,7 +102,9 @@
 		"extract-i18n": {
 			"executor": "@angular-devkit/build-angular:extract-i18n",
 			"options": {
-				"buildTarget": "public-site:build"
+				"buildTarget": "public-site:build",
+				"outputPath": "apps/public-site/public/locales",
+				"format": "xlf2"
 			}
 		},
 		"lint": {

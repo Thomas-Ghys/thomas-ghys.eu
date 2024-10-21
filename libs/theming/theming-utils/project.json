@@ -5,13 +5,6 @@
 	"prefix": "theming",
 	"projectType": "library",
 	"tags": ["type:utils", "domain:theming"],
-	"assets": [
-		{
-			"input": "src/lib/theme-builder/theme-builder.scss",
-			"glob": "**/*.scss",
-			"output": "styles"
-		}
-	],
 	"targets": {
 		"test": {
 			"executor": "@nx/jest:jest",
