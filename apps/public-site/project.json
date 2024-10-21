@@ -58,7 +58,7 @@
 					"localize": ["nl"]
 				},
 				"production": {
-					"localize": true,
+					"localize": ["nl", "en"],
 					"budgets": [
 						{
 							"type": "initial",
