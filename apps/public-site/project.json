@@ -8,11 +8,11 @@
 	"i18n": {
 		"locales": {
 			"en": {
-				"baseHref": "en",
+				"baseHref": "/en/",
 				"translation": "apps/public-site/public/locales/messages.en.xlf"
 			},
 			"nl": {
-				"baseHref": "nl",
+				"baseHref": "/nl/",
 				"translation": "apps/public-site/public/locales/messages.nl.xlf"
 			}
 		}
