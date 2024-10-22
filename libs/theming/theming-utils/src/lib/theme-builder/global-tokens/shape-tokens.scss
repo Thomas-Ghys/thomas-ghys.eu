@@ -1,0 +1,7 @@
+@mixin shape-tokens() {
+	:root {
+		--theme-shape-corner-none: 0;
+		--theme-shape-corner-extra-small: 0.25rem;
+		--theme-shape-corner-full: 1.25rem;
+	}
+}

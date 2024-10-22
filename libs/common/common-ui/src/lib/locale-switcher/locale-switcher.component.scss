@@ -1,0 +1,79 @@
+.locale-switcher-container {
+	align-items: center;
+	display: flex;
+	height: 4rem;
+	justify-content: center;
+	width: 4rem;
+
+	.locale-switcher-button {
+		background-color: transparent;
+		border: unset;
+		height: 2.5rem;
+		padding: 0;
+		width: 2.5rem;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		span {
+			$icon-size: 1.5rem;
+			color: var(--theme-color-on-neutral-variant-surface);
+			font-size: $icon-size;
+			height: $icon-size;
+			width: $icon-size;
+		}
+	}
+}
+
+.locale-switcher-menu-wrapper {
+	background-color: var(--theme-color-neutral-surface-container);
+	border-radius: var(--theme-shape-corner-extra-small);
+	box-shadow: var(--theme-elevation-level2);
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	padding: 0.25rem 0 0.5rem 0;
+	width: 9.375rem;
+
+	&.locale-switcher-active {
+		background-color: var(--theme-color-secondary);
+		cursor: unset;
+	}
+
+	.locale-switcher-menu-item {
+		align-items: center;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: row;
+		gap: 0.75rem;
+		height: 3rem;
+		justify-content: space-between;
+		padding: 0.5rem;
+
+		&:hover {
+			background-color: var(
+				--theme-color-neutral-surface-container-highest
+			);
+			cursor: pointer;
+		}
+
+		.locale-switcher-menu-content {
+			align-items: center;
+			display: flex;
+			flex-direction: row;
+			gap: 0.75rem;
+
+			img {
+				$icon-size: 1.5rem;
+				font-size: $icon-size;
+				height: $icon-size;
+				width: $icon-size;
+			}
+
+			.locale-switcher-menu-label {
+				color: var(--theme-color-on-neutral-variant-surface);
+			}
+		}
+	}
+}

@@ -1,11 +1,10 @@
 <div class="locale-switcher-container">
 	<button
 		class="locale-switcher-button"
-		(click)="(localeSwitcherMenuState != !localeSwitcherMenuState)"
+		(click)="localeSwitcherMenuState = !localeSwitcherMenuState"
 		cdkOverlayOrigin
 		#trigger="cdkOverlayOrigin">
 		<span class="material-symbols-outlined">translate</span>
-		{{ this.locale.split('/').pop() }}
 	</button>
 </div>
 
@@ -18,22 +17,32 @@
 			class="locale-switcher-menu-item"
 			(click)="switchLocale('nl')"
 			[ngClass]="{
-				'locale-switcher-active': this.locale.split('/').pop() === 'nl'
+				'locale-switcher-active':
+					this.locale.split('/').slice(-2, -1)[0] === 'nl'
 			}">
 			<div class="locale-switcher-menu-content">
-				<img src="public/BEFlag.svg" />
-				<div class="locale-switcher-menu-label" i18n>Dutch</div>
+				<img src="flags/BEFlag.svg" />
+				<div
+					class="locale-switcher-menu-label"
+					i18n="@@locale-switcher.dutch">
+					Dutch
+				</div>
 			</div>
 		</section>
 		<section
 			class="locale-switcher-menu-item"
 			(click)="switchLocale('en')"
 			[ngClass]="{
-				'locale-switcher-active': this.locale.split('/').pop() === 'en'
+				'locale-switcher-active':
+					this.locale.split('/').slice(-2, -1)[0] === 'en'
 			}">
 			<div class="locale-switcher-menu-content">
-				<img src="public/UKFlag.svg" />
-				<div class="locale-switcher-menu-label" i18n>English</div>
+				<img src="flags/UKFlag.svg" />
+				<div
+					class="locale-switcher-menu-label"
+					i18n="@@locale-switcher.english">
+					English
+				</div>
 			</div>
 		</section>
 	</div>

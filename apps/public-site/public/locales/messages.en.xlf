@@ -1,30 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-US">
   <file id="ngi18n" original="ng.template">
-  <unit id="1486954636451697956">
+  <unit id="locale-switcher.dutch">
       <notes>
-        <note category="location">apps/public-site/src/app/app.component.html:2,3</note>
+        <note category="location">libs/common/common-ui/src/lib/locale-switcher/locale-switcher.component.html:28,31</note>
       </notes>
       <segment>
-        <source>test translation</source>
-        <target>en translation</target>
-      </segment>
-    </unit>
-    <unit id="3071065188816255493">
-      <notes>
-        <note category="location">libs/common/common-ui/src/lib/locale-switcher/locale-switcher.component.html:23,24</note>
-      </notes>
-      <segment>
-        <source>Dutch</source>
+        <source> Dutch </source>
         <target>Nederlands</target>
       </segment>
     </unit>
-    <unit id="5866254605255506989">
+    <unit id="locale-switcher.english">
       <notes>
-        <note category="location">libs/common/common-ui/src/lib/locale-switcher/locale-switcher.component.html:32,33</note>
+        <note category="location">libs/common/common-ui/src/lib/locale-switcher/locale-switcher.component.html:44,47</note>
       </notes>
       <segment>
-        <source>English</source>
+        <source> English </source>
         <target>English</target>
       </segment>
     </unit>

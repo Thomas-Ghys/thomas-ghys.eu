@@ -1,6 +1,8 @@
-@import './theme-color-ref-tokens.scss';
-@import './theme-color-tokens.scss';
-@import './theme-tokens.scss';
+@import './theme-tokens/theme-color-ref-tokens.scss';
+@import './theme-tokens/theme-color-tokens.scss';
+@import './theme-tokens/theme-tokens.scss';
+@import './global-tokens/elevation-tokens.scss';
+@import './global-tokens/shape-tokens.scss';
 
 $theme: (
 	colors: (
@@ -130,3 +132,5 @@ $theme: (
 @include theme-color-ref-tokens($theme);
 @include theme-color-tokens($theme);
 @include theme-tokens($theme);
+@include elevation-tokens();
+@include shape-tokens();
