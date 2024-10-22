@@ -36,11 +36,6 @@
 	padding: 0.25rem 0 0.5rem 0;
 	width: 9.375rem;
 
-	&.locale-switcher-active {
-		background-color: var(--theme-color-secondary);
-		cursor: unset;
-	}
-
 	.locale-switcher-menu-item {
 		align-items: center;
 		box-sizing: border-box;
@@ -56,6 +51,11 @@
 				--theme-color-neutral-surface-container-highest
 			);
 			cursor: pointer;
+		}
+
+		&.locale-switcher-active {
+			background-color: var(--theme-color-secondary);
+			cursor: unset;
 		}
 
 		.locale-switcher-menu-content {
