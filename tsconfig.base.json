@@ -15,6 +15,7 @@
 		"skipDefaultLibCheck": true,
 		"baseUrl": ".",
 		"paths": {
+			"@thomas-ghys.eu/common-ui": ["libs/common/common-ui/src/index.ts"],
 			"@thomas-ghys.eu/common-utils": [
 				"libs/common/common-utils/src/index.ts"
 			],
