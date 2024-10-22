@@ -9,5 +9,21 @@
         <source>test translation</source>
       </segment>
     </unit>
+    <unit id="3071065188816255493">
+      <notes>
+        <note category="location">libs/common/common-ui/src/lib/locale-switcher/locale-switcher.component.html:23,24</note>
+      </notes>
+      <segment>
+        <source>Dutch</source>
+      </segment>
+    </unit>
+    <unit id="5866254605255506989">
+      <notes>
+        <note category="location">libs/common/common-ui/src/lib/locale-switcher/locale-switcher.component.html:32,33</note>
+      </notes>
+      <segment>
+        <source>English</source>
+      </segment>
+    </unit>
   </file>
 </xliff>
