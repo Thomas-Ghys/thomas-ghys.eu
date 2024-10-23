@@ -19,6 +19,9 @@
 			"@thomas-ghys.eu/common-utils": [
 				"libs/common/common-utils/src/index.ts"
 			],
+			"@thomas-ghys.eu/home-feature": [
+				"libs/home/home-feature/src/index.ts"
+			],
 			"@thomas-ghys.eu/theming-data": [
 				"libs/theming/theming-data/src/index.ts"
 			],
