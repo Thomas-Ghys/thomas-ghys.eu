@@ -1,1 +1,1 @@
-export * from './lib/locale-switcher/locale-switcher.component';
+export * from './lib/top-bar/top-bar.component';

@@ -1,0 +1,30 @@
+.top-bar-container {
+	background-color: var(--theme-color-primary);
+	border-radius: var(--theme-shape-corner-none);
+	box-shadow: var(--theme-elevation-level0);
+	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: auto 1fr min-content;
+	grid-column-gap: 1.5rem;
+	height: 4rem;
+	overflow: hidden;
+	padding: 0 1rem;
+	width: 100%;
+
+	.top-bar-logo-wrapper {
+		align-items: center;
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		width: 100%;
+
+		img {
+			height: 3.5rem;
+		}
+	}
+
+	.top-bar-interaction-wrapper {
+		display: flex;
+		height: 100%;
+	}
+}

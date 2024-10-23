@@ -3,14 +3,14 @@
 		class="locale-switcher-button"
 		(click)="localeSwitcherMenuState = !localeSwitcherMenuState"
 		cdkOverlayOrigin
-		#trigger="cdkOverlayOrigin">
+		#cdkOverlayButton="cdkOverlayOrigin">
 		<span class="material-symbols-outlined">translate</span>
 	</button>
 </div>
 
 <ng-template
 	cdkConnectedOverlay
-	[cdkConnectedOverlayOrigin]="trigger"
+	[cdkConnectedOverlayOrigin]="cdkOverlayButton"
 	[cdkConnectedOverlayOpen]="localeSwitcherMenuState">
 	<div class="locale-switcher-menu-wrapper">
 		<section
