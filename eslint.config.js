@@ -72,7 +72,14 @@ module.exports = [
 								'domain:theming',
 								'domain:common',
 							],
-						},
+                        },
+                        {
+                            sourceTag: 'domain:home',
+                            onlyDependOnLibsWithTags: [
+                                'domain:home',
+                                'domain:common'
+                            ],
+                        }
 					],
 				},
 			],
@@ -82,6 +89,16 @@ module.exports = [
 		files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
 		// Override or add rules here
 		rules: {},
+	},
+	{
+		files: ['**/*.json'],
+		rules: {
+			'@nx/dependency-checks': [
+				'error',
+				{ ignoredFiles: ['{projectRoot}/eslint.config.{js,cjs,mjs}'] },
+			],
+		},
+		languageOptions: { parser: require('jsonc-eslint-parser') },
 	},
 	{
 		files: ['**/*.json'],

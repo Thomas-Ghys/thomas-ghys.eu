@@ -22,6 +22,7 @@
 			"@thomas-ghys.eu/home-feature": [
 				"libs/home/home-feature/src/index.ts"
 			],
+			"@thomas-ghys.eu/home-ui": ["libs/home/home-ui/src/index.ts"],
 			"@thomas-ghys.eu/theming-data": [
 				"libs/theming/theming-data/src/index.ts"
 			],

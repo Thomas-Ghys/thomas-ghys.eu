@@ -1,0 +1,123 @@
+@mixin typography-tokens() {
+	:root {
+		/* display - large */
+		--theme-typescale-display-large-font-family-name: Lato;
+		--theme-typescale-display-large-font-family-style: Regular;
+		--theme-typescale-display-large-font-weight: 25rem;
+		--theme-typescale-display-large-font-size: 3.563rem;
+		--theme-typescale-display-large-line-height: 4rem;
+		--theme-typescale-display-large-letter-spacing: -0.016rem;
+
+		/* display - medium */
+		--theme-typescale-display-medium-font-family-name: Lato;
+		--theme-typescale-display-medium-font-family-style: Regular;
+		--theme-typescale-display-medium-font-weight: 25rem;
+		--theme-typescale-display-medium-font-size: 2.813rem;
+		--theme-typescale-display-medium-line-height: 3.25rem;
+		--theme-typescale-display-medium-letter-spacing: 0rem;
+
+		/* display - small */
+		--theme-typescale-display-small-font-family-name: Lato;
+		--theme-typescale-display-small-font-family-style: Regular;
+		--theme-typescale-display-small-font-weight: 25rem;
+		--theme-typescale-display-small-font-size: 2.25rem;
+		--theme-typescale-display-small-line-height: 2.75rem;
+		--theme-typescale-display-small-letter-spacing: 0rem;
+
+		/* headline - large */
+		--theme-typescale-headline-large-font-family-name: Lato;
+		--theme-typescale-headline-large-font-family-style: Regular;
+		--theme-typescale-headline-large-font-weight: 25rem;
+		--theme-typescale-headline-large-font-size: 2rem;
+		--theme-typescale-headline-large-line-height: 40rem;
+		--theme-typescale-headline-large-letter-spacing: 0rem;
+
+		/* headline - medium */
+		--theme-typescale-headline-medium-font-family-name: Lato;
+		--theme-typescale-headline-medium-font-family-style: Regular;
+		--theme-typescale-headline-medium-font-weight: 25rem;
+		--theme-typescale-headline-medium-font-size: 1.75rem;
+		--theme-typescale-headline-medium-line-height: 2.25rem;
+		--theme-typescale-headline-medium-letter-spacing: 0rem;
+
+		/* headline - small */
+		--theme-typescale-headline-small-font-family-name: Lato;
+		--theme-typescale-headline-small-font-family-style: Regular;
+		--theme-typescale-headline-small-font-weight: 25rem;
+		--theme-typescale-headline-small-font-size: 1.5rem;
+		--theme-typescale-headline-small-line-height: 2rem;
+		--theme-typescale-headline-small-letter-spacing: 0rem;
+
+		/* body - large */
+		--theme-typescale-body-large-font-family-name: Lato;
+		--theme-typescale-body-large-font-family-style: Regular;
+		--theme-typescale-body-large-font-weight: 25rem;
+		--theme-typescale-body-large-font-size: 1rem;
+		--theme-typescale-body-large-line-height: 1.5rem;
+		--theme-typescale-body-large-letter-spacing: 0.031rem;
+
+		/* body - medium */
+		--theme-typescale-body-medium-font-family-name: Lato;
+		--theme-typescale-body-medium-font-family-style: Regular;
+		--theme-typescale-body-medium-font-weight: 25rem;
+		--theme-typescale-body-medium-font-size: 0.875rem;
+		--theme-typescale-body-medium-line-height: 20rem;
+		--theme-typescale-body-medium-letter-spacing: 0.016rem;
+
+		/* body - small */
+		--theme-typescale-body-small-font-family-name: Lato;
+		--theme-typescale-body-small-font-family-style: Regular;
+		--theme-typescale-body-small-font-weight: 25rem;
+		--theme-typescale-body-small-font-size: 0.75rem;
+		--theme-typescale-body-small-line-height: 1rem;
+		--theme-typescale-body-small-letter-spacing: 0.025rem;
+
+		/* label - large */
+		--theme-typescale-label-large-font-family-name: Lato;
+		--theme-typescale-label-large-font-family-style: Medium;
+		--theme-typescale-label-large-font-weight: 500rem;
+		--theme-typescale-label-large-font-size: 0.875rem;
+		--theme-typescale-label-large-line-height: 20rem;
+		--theme-typescale-label-large-letter-spacing: 0.006rem;
+
+		/* label - medium */
+		--theme-typescale-label-medium-font-family-name: Lato;
+		--theme-typescale-label-medium-font-family-style: Medium;
+		--theme-typescale-label-medium-font-weight: 500rem;
+		--theme-typescale-label-medium-font-size: 0.75rem;
+		--theme-typescale-label-medium-line-height: 1rem;
+		--theme-typescale-label-medium-letter-spacing: 0.031rem;
+
+		/* label - small */
+		--theme-typescale-label-small-font-family-name: Lato;
+		--theme-typescale-label-small-font-family-style: Medium;
+		--theme-typescale-label-small-font-weight: 500rem;
+		--theme-typescale-label-small-font-size: 0.688rem;
+		--theme-typescale-label-small-line-height: 1rem;
+		--theme-typescale-label-small-letter-spacing: 0.031rem;
+
+		/* title - large */
+		--theme-typescale-title-large-font-family-name: Lato;
+		--theme-typescale-title-large-font-family-style: Regular;
+		--theme-typescale-title-large-font-weight: 25rem;
+		--theme-typescale-title-large-font-size: 1.375rem;
+		--theme-typescale-title-large-line-height: 1.75rem;
+		--theme-typescale-title-large-letter-spacing: 0rem;
+
+		/* title - medium */
+		--theme-typescale-title-medium-font-family-name: Lato;
+		--theme-typescale-title-medium-font-family-style: Medium;
+		--theme-typescale-title-medium-font-weight: 500rem;
+		--theme-typescale-title-medium-font-size: 1rem;
+		--theme-typescale-title-medium-line-height: 1.5rem;
+		--theme-typescale-title-medium-letter-spacing: 0.009rem;
+
+		/* title - small */
+		--theme-typescale-title-small-font-family-name: Lato;
+		--theme-typescale-title-small-font-family-style: Medium;
+		--theme-typescale-title-small-font-weight: 500rem;
+		--theme-typescale-title-small-font-size: 0.875rem;
+		--theme-typescale-title-small-line-height: 20rem;
+		--theme-typescale-title-small-letter-spacing: 0.006rem;
+	}
+}

@@ -3,6 +3,7 @@
 @import './theme-tokens/theme-tokens.scss';
 @import './global-tokens/elevation-tokens.scss';
 @import './global-tokens/shape-tokens.scss';
+@import './global-tokens/typography-tokens.scss';
 
 $theme: (
 	colors: (
@@ -134,3 +135,4 @@ $theme: (
 @include theme-tokens($theme);
 @include elevation-tokens();
 @include shape-tokens();
+@include typography-tokens();

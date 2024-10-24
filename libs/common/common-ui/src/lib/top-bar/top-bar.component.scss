@@ -6,7 +6,7 @@
 	display: grid;
 	grid-template-columns: auto 1fr min-content;
 	grid-column-gap: 1.5rem;
-	height: 4rem;
+	height: var(--top-bar-height);
 	overflow: hidden;
 	padding: 0 1rem;
 	width: 100%;
@@ -17,6 +17,10 @@
 		height: 100%;
 		justify-content: center;
 		width: 100%;
+
+		&:hover {
+			cursor: pointer;
+		}
 
 		img {
 			height: 3.5rem;

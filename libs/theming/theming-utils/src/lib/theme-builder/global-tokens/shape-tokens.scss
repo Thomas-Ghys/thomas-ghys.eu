@@ -2,6 +2,15 @@
 	:root {
 		--theme-shape-corner-none: 0;
 		--theme-shape-corner-extra-small: 0.25rem;
+		--theme-shape-corner-extra-small-top: 0.25rem 0.25rem 0 0;
+		--theme-shape-corner-small: 0.5rem;
+		--theme-shape-corner-medium: 0.75rem;
+		--theme-shape-corner-large: 1rem;
+		--theme-shape-corner-large-start: 1rem 0 0 1rem;
+		--theme-shape-corner-large-end: 0 1rem 1rem 0;
+		--theme-shape-corner-large-top: 1rem 1rem 0 0;
 		--theme-shape-corner-full: 1.25rem;
+		--theme-shape-corner-extra-large: 20.5rem;
+		--theme-shape-corner-extra-large-top: 20.5rem 20.5rem 0 0;
 	}
 }
