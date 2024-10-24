@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { OverlayModule } from '@angular/cdk/overlay';
 
@@ -8,6 +8,7 @@ import { OverlayModule } from '@angular/cdk/overlay';
 	imports: [CommonModule, OverlayModule],
 	templateUrl: './locale-switcher.component.html',
 	styleUrl: './locale-switcher.component.scss',
+	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LocaleSwitcherComponent implements OnInit {
 	public locale: string = '';
