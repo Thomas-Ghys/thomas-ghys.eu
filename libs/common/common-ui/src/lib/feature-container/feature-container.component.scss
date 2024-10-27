@@ -22,4 +22,10 @@
 		letter-spacing: var(--theme-typescale-display-large-letter-spacing);
 		line-height: var(--theme-typescale-display-large-line-height);
 	}
+
+	.feature-container-content-wrapper {
+		height: 100%;
+		overflow: hidden;
+		width: 100%;
+	}
 }

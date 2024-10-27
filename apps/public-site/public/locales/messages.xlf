@@ -17,5 +17,13 @@
         <source> English </source>
       </segment>
     </unit>
+    <unit id="home.title">
+      <notes>
+        <note category="location">libs/home/home-feature/src/lib/home/home.component.html:1</note>
+      </notes>
+      <segment>
+        <source>Home</source>
+      </segment>
+    </unit>
   </file>
 </xliff>

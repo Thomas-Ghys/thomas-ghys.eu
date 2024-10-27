@@ -19,5 +19,14 @@
         <target>English</target>
       </segment>
     </unit>
+    <unit id="home.title">
+      <notes>
+        <note category="location">libs/home/home-feature/src/lib/home/home.component.html:1</note>
+      </notes>
+      <segment>
+        <source>Home</source>
+        <target>Startpagina</target>
+      </segment>
+    </unit>
   </file>
 </xliff>
