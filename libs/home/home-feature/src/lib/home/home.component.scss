@@ -30,26 +30,6 @@
 		justify-content: center;
 		padding: 1rem;
 
-		.home-page-subtitle {
-			color: var(--theme-color-on-neutral-variant-surface);
-			font-family: var(--theme-typescale-title-large-font-family-name);
-			font-style: var(--theme-typescale-title-large-font-family-style);
-			font-weight: var(--theme-typescale-title-large-font-weight);
-			font-size: var(--theme-typescale-title-large-font-size);
-			letter-spacing: var(--theme-typescale-title-large-letter-spacing);
-			line-height: var(--theme-typescale-title-large-line-height);
-		}
-
-		.home-page-pragraph {
-			color: var(--theme-color-on-neutral-surface);
-			font-family: var(--theme-typescale-body-large-font-family-name);
-			font-style: var(--theme-typescale-body-large-font-family-style);
-			font-weight: var(--theme-typescale-body-large-font-weight);
-			font-size: var(--theme-typescale-body-large-font-size);
-			letter-spacing: var(--theme-typescale-body-large-letter-spacing);
-			line-height: var(--theme-typescale-body-large-line-height);
-		}
-
 		.home-page-introduction {
 			.home-page-introduction-content {
 				display: flex;
@@ -66,4 +46,24 @@
 			}
 		}
 	}
+}
+
+.home-page-subtitle {
+	color: var(--theme-color-on-neutral-variant-surface);
+	font-family: var(--theme-typescale-title-large-font-family-name);
+	font-style: var(--theme-typescale-title-large-font-family-style);
+	font-weight: var(--theme-typescale-title-large-font-weight);
+	font-size: var(--theme-typescale-title-large-font-size);
+	letter-spacing: var(--theme-typescale-title-large-letter-spacing);
+	line-height: var(--theme-typescale-title-large-line-height);
+}
+
+.home-page-paragraph {
+	color: var(--theme-color-on-neutral-surface);
+	font-family: var(--theme-typescale-body-large-font-family-name);
+	font-style: var(--theme-typescale-body-large-font-family-style);
+	font-weight: var(--theme-typescale-body-large-font-weight);
+	font-size: var(--theme-typescale-body-large-font-size);
+	letter-spacing: var(--theme-typescale-body-large-letter-spacing);
+	line-height: var(--theme-typescale-body-large-line-height);
 }
