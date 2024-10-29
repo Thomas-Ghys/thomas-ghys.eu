@@ -4,12 +4,14 @@
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr;
 	height: 100%;
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
 	width: 100%;
 
 	&.breakpoint-smaller-than-medium {
 		grid-template-columns: 1fr;
 		grid-template-rows: min-content 1fr;
+		overflow-y: auto;
 	}
 
 	.home-page-personal-image-wrapper {
@@ -27,8 +29,12 @@
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
-		justify-content: center;
+		justify-content: flex-start;
 		padding: 1rem;
+
+		&.breakpoint-larger-than-small {
+			overflow-y: auto;
+		}
 
 		.home-page-introduction {
 			.home-page-introduction-content {
