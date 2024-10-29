@@ -25,5 +25,53 @@
         <source>Home</source>
       </segment>
     </unit>
+    <unit id="home.introduction.subtitle">
+      <notes>
+        <note category="location">libs/home/home-feature/src/lib/home/home.component.html:11,13</note>
+      </notes>
+      <segment>
+        <source> Introduction </source>
+      </segment>
+    </unit>
+    <unit id="home.introduction.paragraph.1">
+      <notes>
+        <note category="location">libs/home/home-feature/src/lib/home/home.component.html:17,26</note>
+      </notes>
+      <segment>
+        <source> Welcome, I&apos;m <ph id="0" equiv="INTERPOLATION" disp="{{ store.name.firstName() }}"/>. A <ph id="1" equiv="INTERPOLATION_1" disp="{{ store.age() }}"/> year old from <ph id="2" equiv="INTERPOLATION_2" disp="{{ store.address.city() }}"/>, <ph id="3" equiv="INTERPOLATION_3" disp="{{ store.address.country() }}"/>. I possess a deep-seated passion for problem solving and learning, often spending my free time; exploring new (programming) languages and frameworks, solving sudoku&apos;s or spending time in strategical (board)games. In addition I love participating in Co-op challenges where communication, collaboration and knowledge sharing are paramount. </source>
+      </segment>
+    </unit>
+    <unit id="home.introduction.paragraph.2">
+      <notes>
+        <note category="location">libs/home/home-feature/src/lib/home/home.component.html:31,36</note>
+      </notes>
+      <segment>
+        <source> Outside the realm of technology, I spend my time reading, gaming, running and maintaining my plants and aquaria. </source>
+      </segment>
+    </unit>
+    <unit id="home.work-competences.subtitle">
+      <notes>
+        <note category="location">libs/home/home-feature/src/lib/home/home.component.html:41,43</note>
+      </notes>
+      <segment>
+        <source> Work competences </source>
+      </segment>
+    </unit>
+    <unit id="home.work-competences.paragraph.1">
+      <notes>
+        <note category="location">libs/home/home-feature/src/lib/home/home.component.html:47,55</note>
+      </notes>
+      <segment>
+        <source> Currently I am a Front-End Developer in transition to becoming a Product Owner, with a background in creating dynamic web applications and innovative web development. In little less than 3 years of working in the Front-end, I demonstrated a proficiency in a diverse array of competences including; NgRx, Micro-frontends, Mobile responsiveness, RxJS, Google Material, TypeScript, sass, Angular, etc. </source>
+      </segment>
+    </unit>
+    <unit id="home.work-competences.paragraph.2">
+      <notes>
+        <note category="location">libs/home/home-feature/src/lib/home/home.component.html:59,67</note>
+      </notes>
+      <segment>
+        <source> My current key achievements include: writing a custom implementation of Google M3, creating and maintaining the Micro-frontend architecture of a new application, migrating to angular-i18n in a Micro-frontend, refactoring and standardisation of components and introducing reusable component libraries, etc. All of these underscore my commitment to excellence, optimisation and continuous learning and improvements. </source>
+      </segment>
+    </unit>
   </file>
 </xliff>

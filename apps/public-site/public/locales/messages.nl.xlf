@@ -9,7 +9,7 @@
         <source> Dutch </source>
         <target>Nederlands</target>
       </segment>
-    </unit>
+  </unit>
     <unit id="locale-switcher.english">
       <notes>
         <note category="location">libs/common/common-ui/src/lib/locale-switcher/locale-switcher.component.html:44,47</note>
@@ -26,6 +26,60 @@
       <segment>
         <source>Home</source>
         <target>Startpagina</target>
+      </segment>
+    </unit>
+    <unit id="home.introduction.subtitle">
+      <notes>
+        <note category="location">libs/home/home-feature/src/lib/home/home.component.html:11,13</note>
+      </notes>
+      <segment>
+        <source> Introduction </source>
+        <target>Introductie</target>
+      </segment>
+    </unit>
+   <unit id="home.introduction.paragraph.1">
+      <notes>
+        <note category="location">libs/home/home-feature/src/lib/home/home.component.html:17,26</note>
+      </notes>
+      <segment>
+        <source> Welcome, I&apos;m <ph id="0" equiv="INTERPOLATION" disp="{{ store.name.firstName() }}"/>. A <ph id="1" equiv="INTERPOLATION_1" disp="{{ store.age() }}"/> year old from <ph id="2" equiv="INTERPOLATION_2" disp="{{ store.address.city() }}"/>, <ph id="3" equiv="INTERPOLATION_3" disp="{{ store.address.country() }}"/>. I possess a deep-seated passion for problem solving and learning, often spending my free time; exploring new (programming) languages and frameworks, solving sudoku&apos;s or spending time in strategical (board)games. In addition I love participating in Co-op challenges where communication, collaboration and knowledge sharing are paramount. </source>
+        <target>Welkom, ik ben <ph id="0" equiv="INTERPOLATION" disp="{{ store.name.firstName() }}"/>. Een <ph id="1" equiv="INTERPOLATION_1" disp="{{ store.age() }}"/> jarige uit <ph id="2" equiv="INTERPOLATION_2" disp="{{ store.address.city() }}"/>, <ph id="3" equiv="INTERPOLATION_3" disp="{{ store.address.country() }}"/>. Ik bezit een diepe passie voor probleemoplossing en bijleren, wat vaak terug komt in mijn vrije tijd zoals; het experimenteren met nieuwe (programmeer)-talen en frameworks, het oplossen van sudoku&apos;s of het spelen van strategische (bord)spellen. Ook spendeer ik vaak tijd in het doen van Co-op uitdagingen waar communicatie, collaboratie en kennis delen cruciaal zijn.</target>
+      </segment>
+   </unit>
+    <unit id="home.introduction.paragraph.2">
+      <notes>
+        <note category="location">libs/home/home-feature/src/lib/home/home.component.html:31,36</note>
+      </notes>
+      <segment>
+        <source> Outside the realm of technology, I spend my time reading, gaming, running and maintaining my plants and aquaria. </source>
+        <target>Buiten de wereld van technologie spendeer ik mijn vrije tijd met lezen, gamen, lopen en het onderhouden van mijn planten en aquaria.</target>
+      </segment>
+    </unit>
+    <unit id="home.work-competences.subtitle">
+      <notes>
+        <note category="location">libs/home/home-feature/src/lib/home/home.component.html:41,43</note>
+      </notes>
+      <segment>
+        <source> Work competences </source>
+        <target>Werk competenties</target>
+      </segment>
+    </unit>
+    <unit id="home.work-competences.paragraph.1">
+      <notes>
+        <note category="location">libs/home/home-feature/src/lib/home/home.component.html:47,55</note>
+      </notes>
+      <segment>
+        <source> Currently I am a Front-End Developer in transition to becoming a Product Owner, with a background in creating dynamic web applications and innovative web development. In little less than 3 years of working in the Front-end, I demonstrated a proficiency in a diverse array of competences including; NgRx, Micro-frontends, Mobile responsiveness, RxJS, Google Material, TypeScript, sass, Angular, etc. </source>
+        <target>Momenteel ben ik een Front-End developer die in een transistie zit om Product Beheerder te worden, met een achtergrond in het creëren van dynamische web applicaties en innovatieve web ontwikkelingen. In net geen 3 jaar werken in de Front-End, demonstreerde ik een capaciteit in een gevarieerde reeks van competenties waaronder: NgRx, Micro-frontends, Mobiele responsiviteit, RxJS, Google Material, TypeScript, sass, Angular, enz. </target>
+      </segment>
+    </unit>
+    <unit id="home.work-competences.paragraph.2">
+      <notes>
+        <note category="location">libs/home/home-feature/src/lib/home/home.component.html:59,67</note>
+      </notes>
+      <segment>
+        <source> My current key achievements include: writing a custom implementation of Google M3, creating and maintaining the Micro-frontend architecture of a new application, migrating to angular-i18n in a Micro-frontend, refactoring and standardisation of components and introducing reusable component libraries, etc. All of these underscore my commitment to excellence, optimisation and continuous learning and improvements. </source>
+        <target>Mijn huidige belangrijkste prestaties bevatten: het schrijven van een eigen implementatie van Google M3, het uitwerken en onderhouden van een Micro-frontend architectuur in een nieuwe applicatie, migratie doen naar angular-i18n in een Micro-frontend en het standardiseren en herwerken van componenten en de introductie van een herbruikbare componenten biblioteek, enz. Deze zijn allemaal voorbeelden van mijn inspanningen en doelen om te blijven streven voor excellentie, optimalisatie en blijven ontwikkelen en bijleren.</target>
       </segment>
     </unit>
   </file>

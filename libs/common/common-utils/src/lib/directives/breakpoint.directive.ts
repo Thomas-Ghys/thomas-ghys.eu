@@ -7,7 +7,7 @@ import {
 import { Subject, takeUntil } from 'rxjs';
 
 @Directive({
-	selector: 'Breakpoint',
+	selector: '[Breakpoint]',
 	standalone: true,
 })
 export class BreakpointDirective implements OnInit, OnDestroy {
@@ -54,6 +54,8 @@ export class BreakpointDirective implements OnInit, OnDestroy {
 						);
 					}
 				);
+
+				this.updateComputationalClassList(state);
 			});
 	}
 

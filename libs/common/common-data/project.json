@@ -1,0 +1,20 @@
+{
+	"name": "common-data",
+	"$schema": "../../../node_modules/nx/schemas/project-schema.json",
+	"sourceRoot": "libs/common/common-data/src",
+	"prefix": "lib",
+	"projectType": "library",
+	"tags": ["type:data", "domain:common"],
+	"targets": {
+		"test": {
+			"executor": "@nx/jest:jest",
+			"outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+			"options": {
+				"jestConfig": "libs/common/common-data/jest.config.ts"
+			}
+		},
+		"lint": {
+			"executor": "@nx/eslint:lint"
+		}
+	}
+}

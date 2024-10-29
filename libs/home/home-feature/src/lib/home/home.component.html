@@ -3,6 +3,70 @@
 		<section class="home-page-personal-image-wrapper">
 			<img src="personal/Personal.jpg" />
 		</section>
-		<section class="home-page-introduction-wrapper"></section>
+		<section class="home-page-introduction-wrapper">
+			<div class="home-page-introduction">
+				<div
+					i18n="@@home.introduction.subtitle"
+					class="home-page-subtitle">
+					Introduction
+				</div>
+				<div class="home-page-introduction-content">
+					<div
+						i18n="@@home.introduction.paragraph.1"
+						class="home-page-paragraph">
+						Welcome, I'm {{ store.name.firstName() }}. A
+						{{ store.age() }} year old from
+						{{ store.address.city() }},
+						{{ store.address.country() }}. I possess a deep-seated
+						passion for problem solving and learning, often spending
+						my free time; exploring new (programming) languages and
+						frameworks, solving sudoku's or spending time in
+						strategical (board)games. In addition I love
+						participating in Co-op challenges where communication,
+						collaboration and knowledge sharing are paramount.
+					</div>
+					<div
+						i18n="@@home.introduction.paragraph.2"
+						class="home-page-paragraph">
+						Outside the realm of technology, I spend my time
+						reading, gaming, running and maintaining my plants and
+						aquaria.
+					</div>
+				</div>
+			</div>
+			<div class="home-page-work-competences">
+				<div
+					i18n="@@home.work-competences.subtitle"
+					class="home-page-subtitle">
+					Work competences
+				</div>
+				<div class="home-page-work-competences-content">
+					<div
+						i18n="@@home.work-competences.paragraph.1"
+						class="home-page-paragraph">
+						Currently I am a Front-End Developer in transition to
+						becoming a Product Owner, with a background in creating
+						dynamic web applications and innovative web development.
+						In little less than 3 years of working in the Front-end,
+						I demonstrated a proficiency in a diverse array of
+						competences including; NgRx, Micro-frontends, Mobile
+						responsiveness, RxJS, Google Material, TypeScript, sass,
+						Angular, etc.
+					</div>
+					<div
+						i18n="@@home.work-competences.paragraph.2"
+						class="home-page-paragraph">
+						My current key achievements include: writing a custom
+						implementation of Google M3, creating and maintaining
+						the Micro-frontend architecture of a new application,
+						migrating to angular-i18n in a Micro-frontend,
+						refactoring and standardisation of components and
+						introducing reusable component libraries, etc. All of
+						these underscore my commitment to excellence,
+						optimisation and continuous learning and improvements.
+					</div>
+				</div>
+			</div>
+		</section>
 	</div>
 </lib-feature-container>
