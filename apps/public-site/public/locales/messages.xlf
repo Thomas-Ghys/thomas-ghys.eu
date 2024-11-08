@@ -43,7 +43,7 @@
     </unit>
     <unit id="home.introduction.paragraph.2">
       <notes>
-        <note category="location">libs/home/home-feature/src/lib/home/home.component.html:31,36</note>
+        <note category="location">libs/home/home-feature/src/lib/home/home.component.html:31,35</note>
       </notes>
       <segment>
         <source> Outside the realm of technology, I spend my time reading, gaming, running and maintaining my plants and aquaria. </source>
@@ -59,7 +59,7 @@
     </unit>
     <unit id="home.work-competences.paragraph.1">
       <notes>
-        <note category="location">libs/home/home-feature/src/lib/home/home.component.html:47,55</note>
+        <note category="location">libs/home/home-feature/src/lib/home/home.component.html:47,54</note>
       </notes>
       <segment>
         <source> Currently I am a Front-End Developer in transition to becoming a Product Owner, with a background in creating dynamic web applications and innovative web development. In little less than 3 years of working in the Front-end, I demonstrated a proficiency in a diverse array of competences including; NgRx, Micro-frontends, Mobile responsiveness, RxJS, Google Material, TypeScript, sass, Angular, etc. </source>
@@ -67,10 +67,18 @@
     </unit>
     <unit id="home.work-competences.paragraph.2">
       <notes>
-        <note category="location">libs/home/home-feature/src/lib/home/home.component.html:59,67</note>
+        <note category="location">libs/home/home-feature/src/lib/home/home.component.html:59,66</note>
       </notes>
       <segment>
         <source> My current key achievements include: writing a custom implementation of Google M3, creating and maintaining the Micro-frontend architecture of a new application, migrating to angular-i18n in a Micro-frontend, refactoring and standardisation of components and introducing reusable component libraries, etc. All of these underscore my commitment to excellence, optimisation and continuous learning and improvements. </source>
+      </segment>
+    </unit>
+    <unit id="home.download_cv">
+      <notes>
+        <note category="location">libs/home/home-feature/src/lib/home/home.component.html:74,77</note>
+      </notes>
+      <segment>
+        <source>Download CV</source>
       </segment>
     </unit>
   </file>
