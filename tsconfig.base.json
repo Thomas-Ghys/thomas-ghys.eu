@@ -16,6 +16,9 @@
 		"baseUrl": ".",
 		"types": ["@angular/localize"],
 		"paths": {
+            "@thomas-ghys.eu/contact-feature": [
+                "libs/contact/contact-feature/src/index.ts"
+            ],
 			"@thomas-ghys.eu/common-data": [
 				"libs/common/common-data/src/index.ts"
 			],

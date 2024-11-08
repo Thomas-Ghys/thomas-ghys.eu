@@ -60,7 +60,8 @@ module.exports = [
 								'domain:public-site',
 								'domain:common',
 								'domain:theming',
-								'domain:home'
+								'domain:home',
+								'domain:contact'
 							]
 						},
 						{
@@ -78,6 +79,13 @@ module.exports = [
 							sourceTag: 'domain:home',
 							onlyDependOnLibsWithTags: [
 								'domain:home',
+								'domain:common'
+							]
+						},
+						{
+							sourceTag: 'domain:contact',
+							onlyDependOnLibsWithTags: [
+								'domain:contact',
 								'domain:common'
 							]
 						}
@@ -103,10 +111,7 @@ module.exports = [
 			'prefer-arrow-callback': 'error',
 			'prefer-const': 'error',
 			'prefer-object-has-own': 'error',
-			'quote-props': [
-				'error',
-				'as-needed'
-			],
+			'quote-props': ['error', 'as-needed'],
 			'spaced-comment': 'error',
 			'array-bracket-spacing': 'error',
 			'arrow-parens': 'error',
@@ -127,24 +132,15 @@ module.exports = [
 			'key-spacing': 'error',
 			'keyword-spacing': 'error',
 			'new-parens': 'error',
-			'no-extra-parens': [
-				'error',
-				'functions'
-			],
+			'no-extra-parens': ['error', 'functions'],
 			'no-multi-spaces': 'error',
 			'no-trailing-spaces': 'error',
 			'no-whitespace-before-property': 'error',
 			'object-curly-spacing': 'error',
 			'operator-linebreak': 'error',
-			'padded-blocks': [
-				'error',
-				'never'
-			],
+			'padded-blocks': ['error', 'never'],
 			'padding-line-between-statements': 'error',
-			quotes: [
-				'error',
-				'single'
-			],
+			quotes: ['error', 'single'],
 			'rest-spread-spacing': 'error',
 			semi: 'error',
 			'semi-spacing': 'error',
