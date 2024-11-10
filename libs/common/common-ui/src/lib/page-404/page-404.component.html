@@ -1,1 +1,16 @@
-<p>page-404 works!</p>
+<lib-feature-container
+    featureName="Page not found"
+    i18n-featureName="@@page404.title">
+    <div class="page-404-container">
+        <section class="page-404-image-wrapper">
+            <img src="personal/Personal.jpg" />
+        </section>
+        <section class="page-404-button-wrapper">
+            <div
+                (click)="navigateToRoute('home')"
+                class="page-404-home-button">
+                Take me back!
+            </div>
+        </section>
+    </div>
+</lib-feature-container>
