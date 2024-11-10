@@ -1,0 +1,25 @@
+{
+    "name": "contact-ui",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/contact/contact-ui/src",
+    "prefix": "lib",
+    "projectType": "library",
+    "tags": [
+        "domain:contact",
+        "type:ui"
+    ],
+    "targets": {
+        "test": {
+            "executor": "@nx/jest:jest",
+            "outputs": [
+                "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+                "jestConfig": "libs/contact/contact-ui/jest.config.ts"
+            }
+        },
+        "lint": {
+            "executor": "@nx/eslint:lint"
+        }
+    }
+}

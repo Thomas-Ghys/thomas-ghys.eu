@@ -1,0 +1,9 @@
+<div (click)="navigationItemClicked.emit()"
+     Breakpoint
+     [ngClass]="{'navigation-item-active': navigationItemActive}"
+     class="navigation-item-container">
+    <div class="navigation-item-icon-wrapper">
+        <span class="material-symbols-outlined">{{ navigationItemIcon }}</span>
+    </div>
+    <div class="navigation-item-label">{{ navigationItemName }}</div>
+</div>

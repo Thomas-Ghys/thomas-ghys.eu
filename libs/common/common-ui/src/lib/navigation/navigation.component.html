@@ -1,0 +1,20 @@
+<div class="navigation-container">
+    <section>
+        <lib-navigation-item
+            (navigationItemClicked)="navigateToRoute('home')"
+            [navigationItemActive]="currentRoute() === 'home'"
+            i18n-navigationItemName="@@home.title"
+            navigationItemIcon="home"
+            navigationItemName="Home"
+        />
+    </section>
+    <section>
+        <lib-navigation-item
+            (navigationItemClicked)="navigateToRoute('contact')"
+            [navigationItemActive]="currentRoute() === 'contact'"
+            i18n-navigationItemName="@@contact.title"
+            navigationItemIcon="call"
+            navigationItemName="Contact"
+        />
+    </section>
+</div>

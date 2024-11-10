@@ -1,0 +1,10 @@
+.navigation-container {
+    align-items: center;
+    background: var(--theme-color-neutral-surface-container);
+    box-shadow: var(--theme-elevation-level2);
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    height: 5rem;
+    justify-content: center;
+}
