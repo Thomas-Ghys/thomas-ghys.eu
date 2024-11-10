@@ -16,9 +16,6 @@
 		"baseUrl": ".",
 		"types": ["@angular/localize"],
 		"paths": {
-            "@thomas-ghys.eu/contact-feature": [
-                "libs/contact/contact-feature/src/index.ts"
-            ],
 			"@thomas-ghys.eu/common-data": [
 				"libs/common/common-data/src/index.ts"
 			],
@@ -26,6 +23,12 @@
 			"@thomas-ghys.eu/common-utils": [
 				"libs/common/common-utils/src/index.ts"
 			],
+            "@thomas-ghys.eu/contact-feature": [
+                "libs/contact/contact-feature/src/index.ts"
+            ],
+            "@thomas-ghys.eu/contact-ui": [
+                "libs/contact/contact-ui/src/index.ts"
+            ],
 			"@thomas-ghys.eu/home-feature": [
 				"libs/home/home-feature/src/index.ts"
 			],

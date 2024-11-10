@@ -8,24 +8,27 @@ import {PersonalInfoStore} from '@thomas-ghys.eu/common-data';
 	selector: 'lib-home',
 	standalone: true,
 	imports: [CommonModule, FeatureContainerComponent, BreakpointDirective],
-	providers: [
-		PersonalInfoStore
-	],
+	providers: [PersonalInfoStore],
 	templateUrl: './home.component.html',
 	styleUrl: './home.component.scss',
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HomeComponent {
+	private cv = '';
 	public store = inject(PersonalInfoStore);
 
 	constructor(private platformLocation: PlatformLocation) {
+		this.cv =
+			'cv_ThomasGhys_' +
+			this.platformLocation.getBaseHrefFromDOM().replace(/\//g, '') +
+			'.pdf';
 	}
 
-	getFileName() :string {
-		return 'cv_ThomasGhys_' + this.platformLocation.getBaseHrefFromDOM().replace(/\//g, '') + '.pdf';
+	getFileName(): string {
+		return this.cv;
 	}
 
-	getHref() :string {
-		return 'public/files/cv_ThomasGhys_' + this.platformLocation.getBaseHrefFromDOM().replace(/\//g, '') + '.pdf';
+	getHref(): string {
+		return 'public/files/' + this.cv;
 	}
 }

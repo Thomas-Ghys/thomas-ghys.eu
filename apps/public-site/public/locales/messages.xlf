@@ -19,12 +19,21 @@
     </unit>
     <unit id="home.title">
       <notes>
+          <note category="location">libs/common/common-ui/src/lib/navigation/navigation.component.html:6</note>
         <note category="location">libs/home/home-feature/src/lib/home/home.component.html:1</note>
       </notes>
       <segment>
         <source>Home</source>
       </segment>
     </unit>
+      <unit id="contact.title">
+          <notes>
+              <note category="location">libs/common/common-ui/src/lib/navigation/navigation.component.html:15</note>
+          </notes>
+          <segment>
+              <source>Contact</source>
+          </segment>
+      </unit>
     <unit id="home.introduction.subtitle">
       <notes>
         <note category="location">libs/home/home-feature/src/lib/home/home.component.html:11,13</note>
@@ -75,10 +84,10 @@
     </unit>
     <unit id="home.download_cv">
       <notes>
-        <note category="location">libs/home/home-feature/src/lib/home/home.component.html:74,77</note>
+          <note category="location">libs/home/home-feature/src/lib/home/home.component.html:76,78</note>
       </notes>
       <segment>
-        <source>Download CV</source>
+          <source>Download CV</source>
       </segment>
     </unit>
   </file>

@@ -9,6 +9,12 @@ export const appRoutes: Route[] = [
 		)
 	},
 	{
+		path: 'contact',
+		loadChildren: () => import('@thomas-ghys.eu/contact-feature').then(
+			(route) => route.contactRoutes
+		)
+	},
+	{
 		path: '',
 		pathMatch: 'full',
 		redirectTo: 'home'

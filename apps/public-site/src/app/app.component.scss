@@ -1,12 +1,27 @@
 .public-site-container {
 	display: grid;
-	grid-template-rows: 4rem 1fr;
+    grid-template-areas: "top-bar" "navigation" "content";
+    grid-template-rows: 4rem 5rem 1fr;
 	height: 100dvh;
 	overflow: hidden;
 	width: 100dvw;
 
+    &.breakpoint-smaller-than-large {
+        grid-template-areas: "top-bar" "content" "navigation";
+        grid-template-rows: 4rem 1fr 5rem;
+    }
+
+    .top-bar-wrapper {
+        grid-area: top-bar;
+    }
+
+    .navigation-wrappers {
+        grid-area: navigation;
+    }
+
 	.content-wrapper {
 		background: var(--theme-color-neutral-background);
+        grid-area: content;
 		height: 100%;
 		overflow: hidden;
 		width: 100%;
