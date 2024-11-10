@@ -1,0 +1,31 @@
+.download-cv-wrapper {
+    align-items: center;
+    background: var(--theme-color-primary-container);
+    border-radius: var(--theme-shape-corner-large);
+    box-shadow: var(--theme-elevation-3);
+    color: var(--theme-color-on-primary-container);
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    height: 3.5rem;
+    justify-content: center;
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .download-cv-text {
+        align-items: center;
+        display: flex;
+        color: var(--theme-color-on-primary-container);
+        font-family: var(--theme-typescale-label-large-font-family-name);
+        font-style: var(--theme-typescale-label-large-font-family-style);
+        font-weight: var(--theme-typescale-label-large-font-weight);
+        font-size: var(--theme-typescale-label-large-font-size);
+        height: 100%;
+        justify-content: center;
+        letter-spacing: var(--theme-typescale-label-large-letter-spacing);
+        line-height: var(--theme-typescale-label-large-line-height);
+    }
+}

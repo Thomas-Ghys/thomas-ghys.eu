@@ -5,7 +5,7 @@ import {Age} from '../types/age';
 import {computed} from '@angular/core';
 import {Contact} from '../types/contact';
 
-type PersonalInfoState = {
+export type PersonalInfoState = {
 	name: FullName;
 	address: Adress;
 	age: Age;
