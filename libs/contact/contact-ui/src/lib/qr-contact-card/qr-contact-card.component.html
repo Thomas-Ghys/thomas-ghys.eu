@@ -1,0 +1,44 @@
+<div #fullscreenQRCode="cdkOverlayOrigin"
+     (click)="toggleOverlay(fullscreenQRCode)"
+     Breakpoint
+     cdkOverlayOrigin
+     class="qr-contact-card">
+    <section class="qr-contact-card-logo">
+        <img [src]="qrLogo" />
+    </section>
+    <section class="qr-contact-card-details">
+        <div class="qr-contact-card-title">{{ qrTitle }}</div>
+        <div class="qr-contact-card-details">
+            <div class="qr-contact-card-extra-details">
+                <span class="qr-contact-card-extra-details-prefix">{{ qrPrefix }}</span>
+                <div class="qr-contact-card-extra-details">{{ qrExtraDetail }}</div>
+            </div>
+            <div class="qr-contact-card-qr-details">
+                <span class="qr-contact-card-prefix" i18n="@@contact-card.qr-code">QR-code</span>
+                <img
+                    [src]="qrCode"
+                    class="qr-contact-card-qr-code"
+                />
+            </div>
+        </div>
+    </section>
+</div>
+
+<ng-template
+    [cdkConnectedOverlayOpen]="fullscreenQrCodeIsOpen"
+    [cdkConnectedOverlayOrigin]="fullscreenQRCode"
+    cdkConnectedOverlay>
+    <div class="qr-contact-card-fullscreen-overlay-wrapper">
+        <div class="qr-contact-card-close-button-wrapper">
+            <span
+                (click)="closeOverlay()"
+                class="material-symbols-outlined qr-contact-card-close-button">close</span>
+        </div>
+        <div class="qr-contact-card-qr-code-wrapper">
+            <img
+                [src]="qrCode"
+                class="qr-contact-card-qr-code"
+            />
+        </div>
+    </div>
+</ng-template>

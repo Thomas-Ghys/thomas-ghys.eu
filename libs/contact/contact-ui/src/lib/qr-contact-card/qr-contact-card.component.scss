@@ -1,0 +1,140 @@
+.qr-contact-card {
+    align-items: center;
+    background: var(--theme-color-neutral-surface-container);
+    border-radius: var(--theme-shape-corner-medium);
+    box-shadow: var(--theme-elevation-level1);
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 2.5rem 1fr;
+    height: 10rem;
+    overflow: hidden;
+    padding: 0.5rem 1rem;
+    width: 100%;
+
+    &:hover {
+        background: var(--theme-color-neutral-surface-container-lowest);
+        cursor: pointer;
+    }
+
+    .qr-contact-card-logo {
+        img {
+            height: 2.5rem;
+        }
+    }
+
+    .qr-contact-card-details {
+        .qr-contact-card-title {
+            color: var(--theme-color-on-neutral-surface);
+            font-family: var(--theme-typescale-title-large-font-family-name);
+            font-style: var(--theme-typescale-title-large-font-family-style);
+            font-weight: var(--theme-typescale-title-large-font-weight);
+            font-size: var(--theme-typescale-title-large-font-size);
+            letter-spacing: var(--theme-typescale-title-large-letter-spacing);
+            line-height: var(--theme-typescale-title-large-line-height);
+        }
+
+        .qr-contact-card-extra-details {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+
+            .qr-contact-card-extra-details-prefix {
+                color: var(--theme-color-on-neutral-surface);
+                font-family: var(--theme-typescale-title-large-font-family-name);
+                font-style: var(--theme-typescale-title-large-font-family-style);
+                font-weight: var(--theme-typescale-title-large-font-weight);
+                font-size: var(--theme-typescale-title-large-font-size);
+                letter-spacing: var(--theme-typescale-title-large-letter-spacing);
+                line-height: var(--theme-typescale-title-large-line-height);
+            }
+
+            .qr-contact-card-extra-details {
+                color: var(--theme-color-on-neutral-surface);
+                font-family: var(--theme-typescale-body-large-font-family-name);
+                font-style: var(--theme-typescale-body-large-font-family-style);
+                font-weight: var(--theme-typescale-body-large-font-weight);
+                font-size: var(--theme-typescale-body-large-font-size);
+                letter-spacing: var(--theme-typescale-body-large-letter-spacing);
+                line-height: var(--theme-typescale-body-large-line-height);
+            }
+        }
+
+        .qr-contact-card-qr-details {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+
+            .qr-contact-card-prefix {
+                color: var(--theme-color-on-neutral-surface);
+                font-family: var(--theme-typescale-title-large-font-family-name);
+                font-style: var(--theme-typescale-title-large-font-family-style);
+                font-weight: var(--theme-typescale-title-large-font-weight);
+                font-size: var(--theme-typescale-title-large-font-size);
+                letter-spacing: var(--theme-typescale-title-large-letter-spacing);
+                line-height: var(--theme-typescale-title-large-line-height);
+            }
+
+            img {
+                height: 5rem;
+            }
+        }
+    }
+}
+
+.qr-contact-card-fullscreen-overlay-wrapper {
+    align-items: center;
+    background: var(--theme-color-neutral-surface-container);
+    bottom: 0;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    height: 100dvh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100dvw;
+
+    .qr-contact-card-close-button-wrapper {
+        align-items: center;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;
+        width: 100dvw;
+
+        .qr-contact-card-close-button {
+            align-items: center;
+            background: var(--theme-color-primary-container);
+            border-radius: var(--theme-shape-corner-extra-large);
+            box-shadow: var(--theme-elevation-3);
+            color: var(--theme-color-on-primary-container);
+            display: flex;
+            gap: 1rem;
+            flex-direction: row;
+            height: 3.5rem;
+            width: 3.5rem;
+            justify-content: center;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .qr-contact-card-qr-code-wrapper {
+        align-items: center;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        width: 100dvw;
+
+        .qr-contact-card-qr-code {
+            width: min(25em, 100dvw);
+        }
+    }
+}

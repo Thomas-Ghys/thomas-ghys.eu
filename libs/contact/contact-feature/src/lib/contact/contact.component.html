@@ -1,5 +1,45 @@
 <lib-feature-container
     featureName="Contact"
     i18n-featureName="@@contact.title">
-
+    <div Breakpoint class="contact-container">
+        <lib-email-contact-card
+            (concactCardClicked)="openEmail(store.contact.email())"
+            [email]="store.contact.email()"
+            class="contact-card"
+        />
+        <lib-link-contact-card
+            [linkIcon]="'logos/githubLogo.svg'"
+            [linkText]="store.contact.github()"
+            class="contact-card"
+            i18n-linkTitle="@@contact.github"
+            linkTitle="GitHub"
+        />
+        <lib-link-contact-card
+            [linkIcon]="'logos/linkedInLogo.svg'"
+            [linkText]="store.contact.linkedin()"
+            class="contact-card"
+            i18n-linkTitle="@@contact.linkedin"
+            linkTitle="LinkedIn"
+        />
+        <lib-qr-contact-card
+            [qrCode]="'personal/whatsappQR.png'"
+            [qrExtraDetail]="store.contact.phone()"
+            [qrLogo]="'logos/whatsappLogo.svg'"
+            class="contact-card"
+            i18n-qrPrefix="@@contact.mobile"
+            i18n-qrTitle="@@contact.whatsapp"
+            qrPrefix="Mobile"
+            qrTitle="Whatsapp"
+        />
+        <lib-qr-contact-card
+            [qrCode]="'personal/lineQR.jpg'"
+            [qrExtraDetail]="store.contact.line()"
+            [qrLogo]="'logos/lineLogo.svg'"
+            class="contact-card"
+            i18n-qrPrefix="@@contact.id"
+            i18n-qrTitle="@@contact.line"
+            qrPrefix="ID"
+            qrTitle="Line"
+        />
+    </div>
 </lib-feature-container>

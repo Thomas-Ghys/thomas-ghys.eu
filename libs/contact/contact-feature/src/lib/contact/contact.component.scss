@@ -1,0 +1,23 @@
+.contact-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0.5rem;
+    width: 100%;
+
+    &.breakpoint-smaller-than-small {
+        .contact-card {
+            flex: 1 0 100%;
+        }
+    }
+
+    .contact-card {
+        flex: 1 0 48%;
+        box-sizing: border-box;
+    }
+}

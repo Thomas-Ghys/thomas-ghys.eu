@@ -1,0 +1,63 @@
+.email-contact-card {
+    align-items: center;
+    background: var(--theme-color-neutral-surface-container);
+    border-radius: var(--theme-shape-corner-medium);
+    box-shadow: var(--theme-elevation-level1);
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 2.5rem 1fr;
+    overflow: hidden;
+    padding: 0.5rem 1rem;
+    width: 100%;
+
+    &:hover {
+        background: var(--theme-color-neutral-surface-container-lowest);
+        cursor: pointer;
+    }
+
+    .email-contact-card-logo {
+        img {
+            height: 2.5rem;
+        }
+    }
+
+    .email-contact-card-details {
+        .email-contact-card-title {
+            color: var(--theme-color-on-neutral-surface);
+            font-family: var(--theme-typescale-title-large-font-family-name);
+            font-style: var(--theme-typescale-title-large-font-family-style);
+            font-weight: var(--theme-typescale-title-large-font-weight);
+            font-size: var(--theme-typescale-title-large-font-size);
+            letter-spacing: var(--theme-typescale-title-large-letter-spacing);
+            line-height: var(--theme-typescale-title-large-line-height);
+        }
+
+        .email-contact-card-email-details {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+
+            .email-contact-card-email-prefix {
+                color: var(--theme-color-on-neutral-surface);
+                font-family: var(--theme-typescale-title-large-font-family-name);
+                font-style: var(--theme-typescale-title-large-font-family-style);
+                font-weight: var(--theme-typescale-title-large-font-weight);
+                font-size: var(--theme-typescale-title-large-font-size);
+                letter-spacing: var(--theme-typescale-title-large-letter-spacing);
+                line-height: var(--theme-typescale-title-large-line-height);
+            }
+
+            .email-contact-card-email {
+                color: var(--theme-color-on-neutral-surface);
+                font-family: var(--theme-typescale-body-large-font-family-name);
+                font-style: var(--theme-typescale-body-large-font-family-style);
+                font-weight: var(--theme-typescale-body-large-font-weight);
+                font-size: var(--theme-typescale-body-large-font-size);
+                letter-spacing: var(--theme-typescale-body-large-letter-spacing);
+                line-height: var(--theme-typescale-body-large-line-height);
+            }
+        }
+    }
+}

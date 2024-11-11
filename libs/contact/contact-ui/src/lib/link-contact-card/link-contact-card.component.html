@@ -1,0 +1,12 @@
+<div (click)="concactCardClicked.emit()" class="link-contact-card">
+    <section class="link-contact-card-logo">
+        <img [src]="linkIcon" />
+    </section>
+    <section class="link-contact-card-details">
+        <div class="link-contact-card-title">{{ linkTitle }}</div>
+        <div class="link-contact-card-link-details">
+            <span class="link-contact-card-link-prefix" i18n="@@contact-card.url">Url</span>
+            <a [href]="linkText" class="link-contact-card-link">{{ linkText }}</a>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,12 @@
+<div (click)="concactCardClicked.emit()" class="email-contact-card">
+    <section class="email-contact-card-logo">
+        <img src="logos/emailLogo.svg" />
+    </section>
+    <section class="email-contact-card-details">
+        <div class="email-contact-card-title" i18n="@@contact-card.email">E-mail</div>
+        <div class="email-contact-card-email-details">
+            <span class="email-contact-card-email-prefix" i18n="@@contact-card.email">E-mail</span>
+            <a class="email-contact-card-email">{{ email }}</a>
+        </div>
+    </section>
+</div>

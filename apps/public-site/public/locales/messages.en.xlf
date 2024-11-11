@@ -48,6 +48,96 @@
               <target>Page not found</target>
           </segment>
       </unit>
+      <unit id="contact.github">
+          <notes>
+              <note category="location">libs/contact/contact-feature/src/lib/contact/contact.component.html:16,17</note>
+          </notes>
+          <segment>
+              <source>GitHub</source>
+              <target>GitHub</target>
+          </segment>
+      </unit>
+      <unit id="contact.linkedin">
+          <notes>
+              <note category="location">libs/contact/contact-feature/src/lib/contact/contact.component.html:22,24</note>
+          </notes>
+          <segment>
+              <source>LinkedIn</source>
+              <target>LinkedIn</target>
+          </segment>
+      </unit>
+      <unit id="contact.whatsapp">
+          <notes>
+              <note category="location">libs/contact/contact-feature/src/lib/contact/contact.component.html:28,29</note>
+          </notes>
+          <segment>
+              <source>Whatsapp</source>
+              <target>WhatsApp</target>
+          </segment>
+      </unit>
+      <unit id="contact.mobile">
+          <notes>
+              <note category="location">libs/contact/contact-feature/src/lib/contact/contact.component.html:31</note>
+          </notes>
+          <segment>
+              <source>Mobile</source>
+              <target>Mobile:</target>
+          </segment>
+      </unit>
+      <unit id="contact.line">
+          <notes>
+              <note category="location">libs/contact/contact-feature/src/lib/contact/contact.component.html:39</note>
+          </notes>
+          <segment>
+              <source>Line</source>
+              <target>Line</target>
+          </segment>
+      </unit>
+      <unit id="contact.id">
+          <notes>
+              <note category="location">libs/contact/contact-feature/src/lib/contact/contact.component.html:41</note>
+          </notes>
+          <segment>
+              <source>ID</source>
+              <target>ID:</target>
+          </segment>
+      </unit>
+      <unit id="contact-card.email">
+          <notes>
+              <note category="location">
+                  libs/contact/contact-ui/src/lib/email-contact-card/email-contact-card.component.html:6,7
+              </note>
+              <note category="location">
+                  libs/contact/contact-ui/src/lib/email-contact-card/email-contact-card.component.html:8,9
+              </note>
+          </notes>
+          <segment>
+              <source>E-mail</source>
+              <target>Email</target>
+          </segment>
+      </unit>
+      <unit id="contact-card.url">
+          <notes>
+              <note category="location">
+                  libs/contact/contact-ui/src/lib/link-contact-card/link-contact-card.component.html:8,9
+              </note>
+          </notes>
+          <segment>
+              <source>Url</source>
+              <target>URL</target>
+          </segment>
+      </unit>
+      <unit id="contact-card.qr-code">
+          <notes>
+              <note category="location">
+                  libs/contact/contact-ui/src/lib/qr-contact-card/qr-contact-card.component.html:17,19
+              </note>
+          </notes>
+          <segment>
+              <source>QR-code</source>
+              <target>QR-code:</target>
+          </segment>
+      </unit>
     <unit id="home.introduction.subtitle">
       <notes>
         <note category="location">libs/home/home-feature/src/lib/home/home.component.html:11,13</note>
